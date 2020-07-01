@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R9nu5ey9p46vsOn3+ZIzmYL4MrQDgoJvT9I3Vat+TI9T2bvNWN3TzPRxgHl+i1qMIqkyBUbvSE3aMhKvKhPkOw==",
+  "dgSpecHash": "vZCDlA2hZNNcK5rLtQ6JyffF1mhVOOk0HkMQhz1mH5DXyY0tct8OCFNK0FFjoqgBJqQvoPsoK+nFCaAWQp71FA==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\1.50.5\\dapper.1.50.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\magick.net-q8-anycpu\\7.6.0\\magick.net-q8-anycpu.7.6.0.nupkg.sha512",

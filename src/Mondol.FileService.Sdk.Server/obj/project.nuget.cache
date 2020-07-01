@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lB58EaRL914LM0ibsdQ1LwNgmzZndVf2vFDvpjIYuYR6uivGZMzJET8kL4QhjIRcmlgTeL5APV2XPdmMY/Go6w==",
+  "dgSpecHash": "6I4aISozxemaxeBgYQqoQ2ZeUPD0jjfSp+3gJquw9G/T2VvxWzbOAw1MSp8AhBTMZaY1gAalqvA54cD29vkxwQ==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\1.1.1\\microsoft.extensions.dependencyinjection.abstractions.1.1.1.nupkg.sha512",

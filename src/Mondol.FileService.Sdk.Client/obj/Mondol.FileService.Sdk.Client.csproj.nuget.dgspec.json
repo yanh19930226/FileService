@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {}
+    "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {}
   },
   "projects": {
-    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {
+    "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {
       "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
+        "projectUniqueName": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
         "projectName": "Mondol.FileService.Sdk.Client",
-        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
+        "projectPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\obj\\",
+        "outputPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

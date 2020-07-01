@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "un2c4enq/LE5Fj+odn7XKazRKdo7ojdDjH7kmA8cDmXAedRralfRgDYPENKy3tfc2RoGRJc1HHFMJUJkENOAWg==",
+  "dgSpecHash": "1smqiKt9DgnjNxiceJL6s6kR2fnzKsHv3FBrXAStveFLCD2P6afaLNEOGY81WwoR50PW4HKeyOhrghB34ZrhSg==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Web\\Mondol.FileService.Web.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\src\\Mondol.FileService.Web\\Mondol.FileService.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\1.50.5\\dapper.1.50.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",

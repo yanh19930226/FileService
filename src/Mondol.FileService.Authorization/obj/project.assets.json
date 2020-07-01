@@ -5281,11 +5281,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
+      "projectUniqueName": "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
       "projectName": "Mondol.FileService.Authorization",
-      "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
+      "projectPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\obj\\",
+      "outputPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

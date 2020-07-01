@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PBWpnXaUgtatEw9sHFgmIcEAO0Qq5gGSlHnafQP1y7VcT215M0DPXPUv1wIgTLmwnAAtWUgYUV1AIk+oxKgmcw==",
+  "dgSpecHash": "UusAiLxQgA7ZlETQGwWjLe2pZwf0qeOcqrd9d1U+7wn7xX27yAPWhad/+9uEoK/wz/j3TRroUByHthDwHSNdug==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\test\\Test.Console\\Test.Console.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\test\\Test.Console\\Test.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\2.0.0\\microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",

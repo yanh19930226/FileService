@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3kc7nRJihC7tZtIl4E6ZwAGX1lL2YfFRFJ8fh+JKD3+6GqHuoFJITCBDwOv964+VPi8hZY8MziXCYN/U1MOqaw==",
+  "dgSpecHash": "7wtjSJnsbx0SjbfFor4idVzc0lCpohp54lzZ+uCz55dW04x28t6q/YsrBs0n5ar6eaJasahhfnaOD+dSNr9YCA==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\1.50.5\\dapper.1.50.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.1.1\\microsoft.aspnetcore.hosting.abstractions.2.1.1.nupkg.sha512",

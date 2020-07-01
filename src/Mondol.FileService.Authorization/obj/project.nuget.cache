@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BBC4tw3Wmk5ocPTCQ+HYohJ9oj6LBicr2MDeMQtzfBPqOxTDh4B3bKZqTuabAdFIbVR0vUlCsoM4HUd2aUwlWg==",
+  "dgSpecHash": "cVI6KaLL5NAFKkWms+H6n77a8tkrITo958Zim5fUGqX4CbZmthe+lGShglqpBYSf6m8QP9gwKskq4Iuc6g44Ag==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\1.1.1\\microsoft.extensions.dependencyinjection.abstractions.1.1.1.nupkg.sha512",

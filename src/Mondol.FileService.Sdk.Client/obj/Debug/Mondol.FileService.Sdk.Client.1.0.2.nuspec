@@ -18,6 +18,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.dll" target="lib\netstandard1.6\Mondol.FileService.Sdk.Client.dll" />
+    <file src="D:\Work\FileService\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.dll" target="lib\netstandard1.6\Mondol.FileService.Sdk.Client.dll" />
   </files>
 </package>

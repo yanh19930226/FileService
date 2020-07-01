@@ -17,6 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Dockerfile" />
     <None Remove="Swagger\DocDesc.txt" />
   </ItemGroup>
   <ItemGroup>

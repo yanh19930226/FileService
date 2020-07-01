@@ -3952,11 +3952,11 @@
   "project": {
     "version": "1.1.6",
     "restore": {
-      "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
+      "projectUniqueName": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
       "projectName": "Mondol.FileService.Sdk.Server",
-      "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
+      "projectPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Server\\Mondol.FileService.Sdk.Server.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Server\\obj\\",
+      "outputPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Sdk.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3977,8 +3977,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj": {
-              "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj"
+            "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj": {
+              "projectPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj"
             }
           }
         }

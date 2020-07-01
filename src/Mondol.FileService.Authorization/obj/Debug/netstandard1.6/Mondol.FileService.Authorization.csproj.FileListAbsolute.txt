@@ -7,3 +7,12 @@ D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Authoriza
 D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.dll
 D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.pdb
 D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.csprojAssemblyReference.cache
+D:\Work\FileService\src\Mondol.FileService.Authorization\bin\Debug\netstandard1.6\Mondol.FileService.Authorization.deps.json
+D:\Work\FileService\src\Mondol.FileService.Authorization\bin\Debug\netstandard1.6\Mondol.FileService.Authorization.dll
+D:\Work\FileService\src\Mondol.FileService.Authorization\bin\Debug\netstandard1.6\Mondol.FileService.Authorization.pdb
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.AssemblyInfoInputs.cache
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.AssemblyInfo.cs
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.csproj.CoreCompileInputs.cache
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.dll
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.pdb
+D:\Work\FileService\src\Mondol.FileService.Authorization\obj\Debug\netstandard1.6\Mondol.FileService.Authorization.csprojAssemblyReference.cache

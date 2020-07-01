@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {}
+    "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {}
   },
   "projects": {
-    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {
+    "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
+        "projectUniqueName": "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
         "projectName": "Mondol.FileService.Db",
-        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
+        "projectPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\obj\\",
+        "outputPath": "D:\\Work\\FileService\\src\\Mondol.FileService.Db\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

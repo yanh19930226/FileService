@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uIH4+kY16+FTMFbSsifC/AEam/dfAmeiYC+uk2kYc9T/2iW+48L/TfAn1t6spuzbjTHf6UFHSTKlwDaM+KSt9Q==",
+  "dgSpecHash": "Qqp8qqp7Iose2INB49YenfnSiCuWTulJ7fpIPEkIKAsa8HiOjhufa0waUuBtnTRc+y5xPHnYrsRf8idl8mdV6g==",
   "success": true,
-  "projectFilePath": "D:\\Work\\file-service-master\\file-service-master\\test\\FileServiceTests\\FileServiceTests.csproj",
+  "projectFilePath": "D:\\Work\\FileService\\test\\FileServiceTests\\FileServiceTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.codecoverage\\15.8.0\\microsoft.codecoverage.15.8.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",

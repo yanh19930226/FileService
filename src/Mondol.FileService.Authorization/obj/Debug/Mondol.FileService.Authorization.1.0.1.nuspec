@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Authorization\bin\Debug\netstandard1.6\Mondol.FileService.Authorization.dll" target="lib\netstandard1.6\Mondol.FileService.Authorization.dll" />
+    <file src="D:\Work\FileService\src\Mondol.FileService.Authorization\bin\Debug\netstandard1.6\Mondol.FileService.Authorization.dll" target="lib\netstandard1.6\Mondol.FileService.Authorization.dll" />
   </files>
 </package>
