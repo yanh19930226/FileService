@@ -1,0 +1,256 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj": {}
+  },
+  "projects": {
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj": {
+      "version": "1.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
+        "projectName": "Mondol.FileService.Authorization",
+        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.6"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.6": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "Mondol": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
+        "projectName": "Mondol.FileService.Db",
+        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Mondol": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.43.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj",
+        "projectName": "Mondol.FileService.Service",
+        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\Mondol.FileService.Service.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj": {
+                "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Authorization\\Mondol.FileService.Authorization.csproj"
+              },
+              "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj": {
+                "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Db\\Mondol.FileService.Db.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Magick.NET-Q8-AnyCPU": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Formatters.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Mondol": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Mondol.Net.Http": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "Mondol.Web": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

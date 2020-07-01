@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mondol.FileService.Db</name>
+    </assembly>
+    <members>
+        <member name="T:Mondol.FileService.Db.DbHostingStartup">
+            <summary>
+            DB层服务配置
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.File">
+            <summary>
+            文件基本信息
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Db.Entities.File.ExtInfo">
+            <summary>
+            文件扩展信息
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.FileOwner">
+            <summary>
+            文件所有者信息
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Db.Entities.FileOwner.FileId">
+            <summary>
+            File表的ID引用，假设FileOwner与File表号一一对应
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.IdEntity">
+            <summary>
+            A shortcut of <see cref="T:Mondol.FileService.Db.Entities.IdEntity`1"/> for most used primary key type (<see cref="T:System.Int32"/>).
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.IdEntity`1">
+            <summary>
+            Basic implementation of IEntity interface.
+            An entity can inherit this class of directly implement to IEntity interface.
+            </summary>
+            <typeparam name="TPrimaryKey">Type of the primary key of the entity</typeparam>
+        </member>
+        <member name="P:Mondol.FileService.Db.Entities.IdEntity`1.Id">
+            <summary>
+            Unique identifier for this entity.
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Entities.IdEntity`1.Equals(System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mondol.FileService.Db.Entities.IdEntity`1.GetHashCode">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mondol.FileService.Db.Entities.IdEntity`1.op_Equality(Mondol.FileService.Db.Entities.IdEntity{`0},Mondol.FileService.Db.Entities.IdEntity{`0})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mondol.FileService.Db.Entities.IdEntity`1.op_Inequality(Mondol.FileService.Db.Entities.IdEntity{`0},Mondol.FileService.Db.Entities.IdEntity{`0})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mondol.FileService.Db.Entities.IdEntity`1.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.IIdEntity`1">
+            <summary>
+            Defines interface for base entity type. All entities in the system must implement this interface.
+            </summary>
+            <typeparam name="TPrimaryKey">Type of the primary key of the entity</typeparam>
+        </member>
+        <member name="P:Mondol.FileService.Db.Entities.IIdEntity`1.Id">
+            <summary>
+            Unique identifier for this entity.
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.IIdEntity">
+            <summary>
+            A shortcut of <see cref="T:Mondol.FileService.Db.Entities.IIdEntity`1"/> for most used primary key type (<see cref="T:System.Int32"/>).
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Entities.OwnerQuota">
+            <summary>
+            文件所有者配额信息
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.MasterDbContext">
+            <summary>
+            主数据读写上下文
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Db.Options.DbOption.FileTableCount">
+            <summary>
+            File表的分表个数
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Repositories.IFileRepository">
+            <summary>
+            文件相关的数据访问接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IFileRepository.DeleteFileAsync(System.Int32,System.Int32,System.UInt32)">
+            <summary>
+            删除一个文件
+            </summary>
+            <returns>剩余引用计数</returns>
+        </member>
+        <member name="T:Mondol.FileService.Db.Repositories.IOwnerRepository">
+            <summary>
+            文件所有者相关的数据访问接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IOwnerRepository.GetOwnerRemainQuotaAsync(System.Int32,System.Int64)">
+            <summary>
+            获取指定用户剩余的配额
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IOwnerRepository.AddOwnerUsedQuotaAsync(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            为指定的用户增加已使用的配额数
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IOwnerRepository.DecreaseOwnerUsedQuotaAsync(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            为指定的用户减少已使用的配额数
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IOwnerRepository.SetOwnerMaxQuotaAsync(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            设置指定用户的最大配额（不存在则创建）
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Repositories.IRepository">
+            <summary>
+            仓储
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Db.Repositories.IRepositoryAccessor">
+            <summary>
+            IXXXRepository访问器（XXX表示具体的业务数据模块）
+            
+            IRepository生命周期是请求作用域级别的，
+            此访问器是单例的，可以方便的获取IRepository
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.IRepositoryAccessor.GetRepository``1">
+            <summary>
+            获取指定类型的IRepository，不存在返回null
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Db.Repositories.RepositoryAccessorExtensions.GetRequiredRepository``1(Mondol.FileService.Db.Repositories.IRepositoryAccessor)">
+            <summary>
+            获取指定类型的IRepository，不存在抛出InvalidOperationException异常
+            </summary>
+        </member>
+        <member name="T:Dapper.EasyTransaction">
+            <summary>
+                Transaction object helps maintain transaction depth counts
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.deps.json
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.pdb
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.csprojAssemblyReference.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.AssemblyInfoInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.AssemblyInfo.cs
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.csproj.CoreCompileInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\obj\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.pdb

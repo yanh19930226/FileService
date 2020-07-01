@@ -1,0 +1,13 @@
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.deps.json
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.pdb
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.xml
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Authorization.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\bin\Debug\netstandard2.0\Mondol.FileService.Authorization.pdb
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.csprojAssemblyReference.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.AssemblyInfoInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.AssemblyInfo.cs
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.csproj.CoreCompileInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.csproj.CopyComplete
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Server\obj\Debug\netstandard2.0\Mondol.FileService.Sdk.Server.pdb

@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mondol.FileService.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Mondol.FileService.Controllers.ClusterController">
+            <summary>
+            内部通信用的接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ClusterController.RawFileExists(System.Int32,System.UInt32,System.DateTime)">
+            <summary>
+            判断文件是否存在
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ClusterController.SyncFileAsync(Mondol.FileService.Web.Models.Input.User.SyncFileModel)">
+            <summary>
+            服务器间同步文件
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Controllers.ControllerBase.Logger">
+            <summary>
+            返回当前类的日志记录器
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Controllers.DebugController">
+            <summary>
+            调试代码用的控制器
+            </summary>
+            <remarks>
+            此控制器下的方法只在DEBUG模式下才可使用
+            </remarks>
+        </member>
+        <member name="T:Mondol.FileService.Controllers.ServerApiController">
+            <summary>
+            管理端接口
+            </summary>
+            <remarks>
+            server api
+            </remarks>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.SetOwnerQuotaAsync(System.Int32,System.Int64,System.Int64)">
+            <summary>
+            设置指定用户的配额信息
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="max">最大配额数（字节）</param>
+            <remarks>
+            通常在注册用户时调用
+            </remarks>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.UploadAsync(Mondol.FileService.Web.Models.Input.Server.UploadFileInput)">
+            <summary>
+            上传文件
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.UploadByRemoteAsync(Mondol.FileService.Web.Models.Input.Server.UploadFileByRemoteInput)">
+            <summary>
+            上传文件(从远程拉取)
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.GetFileInfoAsync(System.String)">
+            <summary>
+            获取指定文件的信息
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.DeleteFileByFileTokenAsync(System.String)">
+            <summary>
+            删除指定用户文件
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.CreateOwnerToken(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            生成一个ownerToken
+            </summary>
+            <param name="ownerType"></param>
+            <param name="ownerId"></param>
+            <param name="periodDay">有效期（天）</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.ServerApiController.GetOwnerTokenInfo(System.String)">
+            <summary>
+            GetOwnerTokenInfo
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Controllers.UserFileController">
+            <summary>
+            文件操作相关接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.UploadAsync(Mondol.FileService.Web.Models.Input.User.UploadFileInput)">
+            <summary>
+            上传文件
+            </summary>
+            <remarks>
+            ### 上传步骤：
+            1. 在真正上传文件前先计算文件SHA1值
+            2. 调用本接口只传hash参数，不传file参数
+            3. 如果本文件之前有人传过则接口返回成功(errCode=0)
+               1. 跳过后续步骤
+            4. 如果本文件之前没人传过，则errCode=100
+               1. 再次调用本接口，传file参数，不传hash参数（传也会忽略）
+            </remarks>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.UploadByRemoteAsync(Mondol.FileService.Web.Models.Input.User.UploadFileByRemoteInput)">
+            <summary>
+            上传文件（从远程拉取）
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.GetHandlers">
+            <summary>
+            获取文件处理器列表
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.GetHandler(System.String)">
+            <summary>
+            获取指定文件处理器支持的转换修饰符信息
+            </summary>
+            <remarks>
+            不同处理器返回结构不同。
+            花括号（{xxx}）包围的表示必选参数，方括号（[xxx]）包围的表示可选参数
+            </remarks>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.DownloadAsync(System.String,System.String)">
+            <summary>
+            下载文件（不指定转换修饰符）
+            </summary>
+            <param name="fileToken"><seealso cref="M:Mondol.FileService.Controllers.UserFileController.DownloadAsync(System.String,System.String,System.String)"/></param>
+            <param name="handler"><seealso cref="M:Mondol.FileService.Controllers.UserFileController.DownloadAsync(System.String,System.String,System.String)"/></param>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.DownloadAsync(System.String,System.String,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="fileToken">上传接口返回的文件访问令牌</param>
+            <param name="handler">文件转换处理器名字</param>
+            <param name="modifier">文件转换修饰符，定义参见对应文件处理器的描述</param>
+            <remarks>
+            ### 图片转换实现：
+            1. 假设fileToken=8o2YcHjzP-LYDNRdePMrxwE01WcbAAAAAQAAAAHhmsFjiPWwMe-XlA8.，对应的原文件为600x800的一张jpg图片        
+            2. 您可以用文件根地址+sizes+formats拼接URL地址以实现转换的目的  
+            3. 如果您想请求128x128，png格式的的图片可拼接为：http://file.mondol.info/files/8o2YcHjzP-LYDNRdePMrxwE01WcbAAAAAQAAAAHhmsFjiPWwMe-XlA8./128x128_png
+            </remarks>
+        </member>
+        <member name="M:Mondol.FileService.Controllers.UserFileController.DeleteAsync(System.String,System.String)">
+            <summary>
+            删除指定的文件
+            </summary>
+            <param name="fileToken">上传接口返回的文件访问令牌</param>
+            <param name="ownerToken">文件所有者令牌</param>
+        </member>
+        <member name="T:Mondol.FileService.Web.Controllers.UEditor.UEditorController">
+            <summary>
+            UEditor API控制器
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.PathFormat">
+            <summary>
+            文件命名规则
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.UploadFieldName">
+            <summary>
+            上传表单域名称
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.SizeLimit">
+            <summary>
+            上传大小限制
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.AllowExtensions">
+            <summary>
+            上传允许的文件格式
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.Base64">
+            <summary>
+            文件是否以 Base64 的形式上传
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Controllers.UEditor.UEditorController.UploadConfig.Base64Filename">
+            <summary>
+            Base64 字符串所表示的文件名
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileInput.FileName">
+            <summary>
+            文件名（包含扩展名），不传则从文件流中读取。例如：test.jpg
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileInput.File">
+            <summary>
+            待上传的文件流
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileInput.Hash">
+            <summary>
+            待上传文件的SHA1值。例如：c64376a0d4677f0d4df563fe23f0c8239a45c17d
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileInput.PeriodMinute">
+            <summary>
+            链接有效期（分钟）,0则不过期
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileByRemoteInput.FileName">
+            <summary>
+            文件名（包含扩展名），不传则从文件流中读取。例如：test.jpg
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileByRemoteInput.FileUrl">
+            <summary>
+            文件下载地址
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.Server.UploadFileByRemoteInput.PeriodMinute">
+            <summary>
+            链接有效期（分钟）,0则不过期
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileInput.FileName">
+            <summary>
+            文件名（包含扩展名），不传则从文件流中读取。例如：test.jpg
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileInput.File">
+            <summary>
+            待上传的文件流
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileInput.Hash">
+            <summary>
+            待上传文件的SHA1值。例如：c64376a0d4677f0d4df563fe23f0c8239a45c17d
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileInput.PeriodMinute">
+            <summary>
+            链接有效期（分钟）,0则不过期
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.BaseOwnerTokenInput.OwnerToken">
+            <summary>
+            文件所有者令牌，此参数通过其它服务获取
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileByRemoteInput.FileName">
+            <summary>
+            文件名（包含扩展名），不传则从文件流中读取。例如：test.jpg
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileByRemoteInput.FileUrl">
+            <summary>
+            文件下载地址
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Web.Models.Input.User.UploadFileByRemoteInput.PeriodMinute">
+            <summary>
+            链接有效期（分钟）,0则不过期
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Filters.ValidateModelAttribute">
+            <summary>
+            确保当前Action的Model是已验证的，否则返回错误响应结果
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.GlobalExceptionHandlerOptions">
+            <summary>
+            全局异常处理选项
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Options.ManageOption.IsLocalIp(System.String)">
+            <summary>
+            判断指定IP是否是本机IP
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.HostingEnvironmentExtensions">
+            <summary>
+            IHostingEnvironment的扩展方法
+            </summary>
+        </member>
+        <member name="M:Mondol.WebPlatform.HostingEnvironmentExtensions.GetConfigPath(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            获取配置文件根目录
+            </summary>
+        </member>
+        <member name="M:Mondol.WebPlatform.ModelStateDictionaryExtensions.GetFirstErrorMessage(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary)">
+            <summary>
+            获取第1个错误消息
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.AppendApiNameOperationFilter">
+            <summary>
+            在接口说明中追加API英文名
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.DefaultBehaviorSetup">
+            <summary>
+            截止Swashbuckle 1.0.0-rc3版本强制要求明确指定API的HTTP方法及参数来源类型，否则异常。
+            本类会抑制这种强制行为，未指定时给于默认行为
+            </summary>
+        </member>
+        <member name="M:Mondol.WebPlatform.Swagger.DefaultBehaviorSetup.Apply(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiDescription)">
+            <summary>
+            应用默认行为
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixContentTypeOperationFilter">
+            <summary>
+            截止Swashbuckle 2.2.0
+            
+            修复 调用接口时请求Content-Type为undefined
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixDefaultValueOperationFilter">
+            <summary>
+            截止Swashbuckle 1.0.0-rc3
+            修复 DefaultValue属性标记的参数不会有默认值效果
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixEnumOperationFilter">
+            <summary>
+            截止Swashbuckle 1.0.0-rc3
+            修复 如果参数是枚举类型并且未写参数注释则使用枚举的注释
+            修复 枚举取值加上键/值说明
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixFormFileOperationFilter">
+            <summary>
+            截止Swashbuckle 1.0.0
+            
+            修复 IFormFile类型参数显示为undefined
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixRequiredOperationFilter">
+            <summary>
+            截止Swashbuckle 1.0.0-rc3
+            修复 值类型并且没有DefaultValueAttribute属性的都为必选
+            修复 标记了Required标记的属性不好使的问题
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.FixTagsDocOperationFilter">
+            <summary>
+            截止Swashbuckle 1.2.1版本控制器类的注释不会显示在类别栏里，此类可以解决
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.SchemeIdGenerator">
+            <summary>
+            生成SchemeId
+            </summary>
+        </member>
+        <member name="T:Mondol.WebPlatform.Swagger.SwaggerBeforeHookMiddleware">
+            <summary>
+            用于在Swagger开始生成API前执行代码的Middleware
+            
+            ** 必需放到app.UseSwaggerService() 前 **
+            </summary>
+        </member>
+        <member name="T:Mondol.Net.Http.MultipartFormDataContentExtensions">
+            <summary>
+            MultipartFormDataContent的扩展方法
+            </summary>
+        </member>
+        <member name="M:Mondol.Net.Http.MultipartFormDataContentExtensions.AddByString(System.Net.Http.MultipartFormDataContent,System.String,System.String)">
+            <summary>
+            添加字符串字段
+            </summary>
+        </member>
+        <member name="M:Mondol.Net.Http.MultipartFormDataContentExtensions.AddByFile(System.Net.Http.MultipartFormDataContent,System.String,System.String)">
+            <summary>
+            添加文件字段
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,10 @@
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\bin\Debug\netcoreapp2.1\Mondol.FileService.Db.deps.json
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\bin\Debug\netcoreapp2.1\Mondol.FileService.Db.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\bin\Debug\netcoreapp2.1\Mondol.FileService.Db.pdb
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\bin\Debug\netcoreapp2.1\Mondol.FileService.Db.xml
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.AssemblyInfoInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.AssemblyInfo.cs
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.csproj.CoreCompileInputs.cache
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.dll
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.pdb
+D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Db\obj\Debug\netcoreapp2.1\Mondol.FileService.Db.csprojAssemblyReference.cache

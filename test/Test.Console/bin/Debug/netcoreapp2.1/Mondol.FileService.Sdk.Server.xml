@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mondol.FileService.Sdk.Server</name>
+    </assembly>
+    <members>
+        <member name="T:Mondol.FileService.Server.FileServiceManager">
+            <summary>
+            文件服务器管理接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.VerifyFileInfo(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.String)">
+            <summary>
+            验证文件信息
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.SetOwnerQuotaAsync(System.Int32,System.Int32,System.UInt64)">
+            <summary>
+            设置指定用户的配额信息
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="max">最大配额数（字节）</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.UploadAsync(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="filePath">文件路径</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.UploadAsync(System.Int32,System.Int32,System.IO.Stream,System.String,System.String,System.Int32)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="file">文件路径</param>
+            <param name="fileName">文件名</param>
+            <param name="hash">小写hex sha1值。如果为空并且file.CanSeek则自动计算sha1值</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.UploadByRemoteAsync(System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            从远程拉取文件并存储
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="fileUrl">文件下载地址</param>
+            <param name="fileName">文件名</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.GetFileInfoAsync(System.String)">
+            <summary>
+            获取指定文件的信息
+            </summary>
+            <param name="fileToken">fileToken</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.FileServiceManager.DeleteFileAsync(System.String)">
+            <summary>
+            删除指定文件
+            </summary>
+            <param name="fileToken">fileToken</param>
+        </member>
+        <member name="P:Mondol.FileService.Server.FileServiceOption.Host">
+            <summary>
+            服务服务器IP地址
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.DefaultHttpClientFactory">
+            <summary>
+            默认IHttpClientFactory实现
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Server.HttpClientExtensions.GetResultAsync``1(System.Net.Http.HttpClient,System.Net.Http.HttpMethod,System.String,System.Net.Http.HttpContent)">
+            <summary>
+            取返回结果的
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.HttpClientExtensions.HttpResponseMessageDelayDisposeStream">
+            <summary>
+            延迟释放HttpResponseMessage流
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.HttpClientExtensions.HttpResponseMessageDelayDisposeStreamReader">
+            <summary>
+            延迟释放HttpResponseMessage的流
+            因为HttpResponseMessage释放后Content也会释放
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.HttpClientFactoryOptions.HttpClientName">
+            <summary>
+            设置CreateClient时的名字，默认空
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.IFileServiceManager">
+            <summary>
+            文件服务器管理接口
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.GenerateOwnerTokenString(System.Int32,System.Int32,System.TimeSpan)">
+            <summary>
+            生成所有者访问令牌
+            </summary>
+            <param name="ownerType">所有者类型</param>
+            <param name="ownerId">所有者ID</param>
+            <param name="validTime">有效期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.SetOwnerQuotaAsync(System.Int32,System.Int32,System.UInt64)">
+            <summary>
+            设置指定用户的配额信息
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="max">最大配额数（字节）</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.UploadAsync(System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="filePath">文件路径</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.UploadAsync(System.Int32,System.Int32,System.IO.Stream,System.String,System.String,System.Int32)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="file">文件路径</param>
+            <param name="fileName">文件名</param>
+            <param name="hash">哈希</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.UploadByRemoteAsync(System.Int32,System.Int32,System.String,System.String,System.Int32)">
+            <summary>
+            从远程拉取文件并存储
+            </summary>
+            <param name="ownerType">文件所有者类型</param>
+            <param name="ownerId">文件所有者ID</param>
+            <param name="fileUrl">文件下载地址</param>
+            <param name="fileName">文件名</param>
+            <param name="periodMinute">链接有效期（分钟）,0则不过期</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.GetFileInfoAsync(System.String)">
+            <summary>
+            获取指定文件的信息
+            </summary>
+            <param name="fileToken">fileToken</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.DeleteFileAsync(System.String)">
+            <summary>
+            删除指定文件
+            </summary>
+            <param name="fileToken">fileToken</param>
+        </member>
+        <member name="M:Mondol.FileService.Server.IFileServiceManager.VerifyFileInfo(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.String)">
+            <summary>
+            验证文件信息
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Input.UploadFileInput.FileName">
+            <summary>
+            文件名（包含扩展名），不传则从文件流中读取。例如：test.jpg
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Input.UploadFileInput.File">
+            <summary>
+            待上传的文件流
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Input.UploadFileInput.Hash">
+            <summary>
+            待上传文件的SHA1值。例如：c64376a0d4677f0d4df563fe23f0c8239a45c17d
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Input.UploadFileInput.PeriodMinute">
+            <summary>
+            链接有效期（分钟）,0则不过期
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.Models.Output.UploadResultData">
+            <summary>
+            文件上传结果数据
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Output.UploadResultData.FileToken">
+            <summary>
+            文件访问令牌
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Output.UploadResultData.Url">
+            <summary>
+            文件下载根地址
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Output.UploadResultData.Name">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Output.UploadResultData.Length">
+            <summary>
+            长度（字节）
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Server.Models.Output.UploadResultData.Sign">
+            <summary>
+            所有字段的签名
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Server.ServiceServiceCollectionSdkExtensions">
+            <summary>
+            FileService的IServiceCollection扩展
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Server.ServiceServiceCollectionSdkExtensions.AddFileService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加FileService.Sdk.Server的相关服务
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.IHttpClientFactory">
+            <summary>
+            HttpClient工厂
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.HttpClientFactoryExtensions.CreateClient(Mondol.FileService.IHttpClientFactory)">
+            <summary>
+            Creates a new <see cref="T:System.Net.Http.HttpClient" /> using the default configuration.
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Service.Models.Output.DataResult`1.Data">
+            <summary>
+            API结果的数据内容
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Service.Models.Output.IDataResult`1">
+            <summary>
+            带附加Data的操作结果接口定义
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Service.Models.Output.IResult">
+            <summary>
+            操作结果接口定义
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Service.Models.Output.ListData`1.List">
+            <summary>
+            数据列表
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Service.Models.Output.Result">
+            <summary>
+            API结果通用类
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Service.Models.Output.Result.ErrorCode">
+            <summary>
+            错误代码。
+            100以下参见<see cref="T:Mondol.FileService.Service.Models.Output.ResultErrorCodes"/>的定义 | 100及以上参见具体接口的定义
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Service.Models.Output.Result.ErrorMsg">
+            <summary>
+            如果接口失败，此字段为失败原因
+            </summary>
+        </member>
+        <member name="P:Mondol.FileService.Service.Models.Output.Result.Success">
+            <summary>
+            表示成功的IResult
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Service.Models.Output.ResultErrorCodes">
+            <summary>
+            IResult操作结果错误代码，100以下系统保留,100及以上为特定接口的定义
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.Success">
+            <summary>
+            操作成功
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.Unknown">
+            <summary>
+            未知错误
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.Failure">
+            <summary>
+            操作失败
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.ArgumentBad">
+            <summary>
+            参数错误
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.SystemError">
+            <summary>
+            系统错误
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.Unauthorized">
+            <summary>
+            未授权的访问
+            </summary>
+        </member>
+        <member name="F:Mondol.FileService.Service.Models.Output.ResultErrorCodes.AuthorizeExpired">
+            <summary>
+            授权已过期
+            </summary>
+        </member>
+        <member name="T:Mondol.FileService.Service.Models.Output.ResultExtensions">
+            <summary>
+            IResult的扩展方法
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Service.Models.Output.ResultExtensions.IsSuccess(Mondol.FileService.Service.Models.Output.IResult)">
+            <summary>
+            当前结果是否成功？
+            </summary>
+        </member>
+        <member name="M:Mondol.FileService.Service.Models.Output.ResultExtensions.EnsureSuccess``1(``0)">
+            <summary>
+            确保ErrorCode为Success否则抛出<see cref="T:System.InvalidOperationException"/>异常
+            </summary>
+        </member>
+        <member name="M:Mondol.Utils.ArrayUtil.Addition(System.Array[])">
+            <summary>
+            返回多个数组相加后的新数组
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Mondol.FileService.Sdk.Client</id>
+    <version>1.0.2</version>
+    <authors>Frank</authors>
+    <owners>Frank</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Mondol.FileService.Sdk.Client</description>
+    <copyright>Mondol Studio</copyright>
+    <tags>Mondol</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="Mondol" version="5.2.1" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Work\file-service-master\file-service-master\src\Mondol.FileService.Sdk.Client\bin\Debug\netstandard1.6\Mondol.FileService.Sdk.Client.dll" target="lib\netstandard1.6\Mondol.FileService.Sdk.Client.dll" />
+  </files>
+</package>

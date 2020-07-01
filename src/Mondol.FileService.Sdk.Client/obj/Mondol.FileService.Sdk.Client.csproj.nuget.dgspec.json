@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {}
+  },
+  "projects": {
+    "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj": {
+      "version": "1.0.2",
+      "restore": {
+        "projectUniqueName": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
+        "projectName": "Mondol.FileService.Sdk.Client",
+        "projectPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\Mondol.FileService.Sdk.Client.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Work\\file-service-master\\file-service-master\\src\\Mondol.FileService.Sdk.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.6"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://120.78.1.82:8081/repository/nuget-hosted/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.6": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "Mondol": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
